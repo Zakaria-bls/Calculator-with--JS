@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css"> 
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <title>calculatrise</title>
+</head>
+<body>
+    <div class="content">
+        <p id="name">Calculatrice</p>
+        <div class="affichage" id="affichage"><p id="affiche"></p></div>
+        <table>
+            <tr>
+                <td id="e" onclick="nem1('%')">%</td>
+                <td id="e" onclick="c()">CE</td>
+                <td id="e" onclick="c()">C</td>
+                <td id="e" onclick="subs()"><i class="fas fa-backspace"></i></td>
+            </tr>
+            <tr>
+                <td id="e" onclick="inverse()">1/x</td>
+                <td id="e" onclick="carre()">x*x</td>
+                <td id="e" onclick="racine()"></td>
+                <td id="e" onclick="nem1('/')">/</td>
+            </tr>
+            <tr>
+                <td id="s" onclick="nem1('7')">7</td>
+                <td id="s" onclick="nem1('8')">8</td>
+                <td id="s" onclick="nem1('9')">9</td>
+                <td id="e" onclick="nem1('*')">*</td>
+            </tr>
+            <tr>
+                <td id="s" onclick="nem1('4')">4</td>
+                <td id="s" onclick="nem1('5')">5</td>
+                <td id="s" onclick="nem1('6')">6</td>
+                <td id="e" onclick="nem1('-')">-</td>
+            </tr>
+            <tr>
+                <td id="s" onclick="nem1('1')">1</td>
+                <td id="s" onclick="nem1('2')">2</td>
+                <td id="s" onclick="nem1('3')">3</td>
+                <td id="e" onclick="nem1('+')">+</td>
+            </tr>
+            <tr>
+                <td id="s" onclick="moin()">+/-</td>
+                <td id="s" onclick="nem1('0')">0</td>
+                <td id="s" onclick="nem1('.')">,</td>
+                <td id="a" onclick="concat()">=</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
